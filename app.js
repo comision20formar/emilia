@@ -10,18 +10,17 @@ app.use(express.static('public'))
 app.get("/", (req, res) =>
   res.sendFile(path.join(__dirname, "views", "home.html"))
 );
-app.get("/nosotros", (req, res) =>
+app.get("/about", (req, res) =>
   res.sendFile(path.join(__dirname, "views", "about.html"))
 );
-app.get("/musica", (req, res) =>
+app.get("/music", (req, res) =>
   res.sendFile(path.join(__dirname, "views", "music.html"))
 );
-app.get("/contacto", (req, res) =>
+app.get("/contact", (req, res) =>
   res.sendFile(path.join(__dirname, "views", "contact.html"))
 );
-app.get("/babbage", (req, res) =>
-  res.sendFile(path.join(__dirname, "views", "babbage.html"))
-);
+
+
 app.listen(PORT, () =>
   console.log("Server running in http://localhost:" + PORT)
 );
