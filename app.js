@@ -19,6 +19,9 @@ app.get("/music", (req, res) =>
 app.get("/contact", (req, res) =>
   res.sendFile(path.join(__dirname, "views", "contact.html"))
 );
+app.get("/*",(req,res) => 
+res.sendFile(path.join(__dirname,"views","404notfound.html"))
+)
 
 
 app.listen(PORT, () =>
