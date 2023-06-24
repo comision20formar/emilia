@@ -5,3 +5,19 @@ header nav ul li {
 .header__vertical {
     padding-left: 30px;
 }
+
+
+.header__horizontal {
+    text-align: right;
+}
+
+.header__horizontal nav.menu{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+}
+
+.header__horizontal nav ul li {
+    display: inline;
+}
